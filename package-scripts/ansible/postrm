@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# Perform necessary ansible removal steps
+# after package is uninstalled.
+#
+
+PREFIX=/usr/local
+
+# Clean up binary symlinks if they exist
+rm -f $PREFIX/bin/ansible
+rm -f $PREFIX/bin/ansible-doc
+rm -f $PREFIX/bin/ansible-playbook
+rm -f $PREFIX/bin/ansible-pull
+
+echo "ansible has been uninstalled!"
+
+exit 0

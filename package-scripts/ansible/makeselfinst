@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# Install a full ansible
+#
+
+PROGNAME=`basename $0`
+INSTALLER_DIR=`dirname $0`
+DEST_DIR=/opt/ansible
+CONFIG_DIR=/etc/ansible
+USAGE="usage: $0"
+PREFIX=/usr/local
+
+error_exit()
+{
+  echo "${PROGNAME}: ${1:-"Unknown Error"}" 1>&2
+  exit 1
+}
+
+# move the actual files into place
+rm -rf $DEST_DIR/* || error_exit "Cannot remove contents of $DEST_DIR"
+mkdir -p $DEST_DIR || error_exit "Cannot create $DEST_DIR"
+cp -R $INSTALLER_DIR $DEST_DIR || error_exit "Cannot install to $DEST_DIR"
+rm -f $DEST_DIR/$PROGNAME
+
+ln -sf $DEST_DIR/bin/ansible $PREFIX/bin || error_exit "Cannot link ansible to $PREFIX/bin"
+ln -sf $DEST_DIR/bin/ansible-doc $PREFIX/bin || error_exit "Cannot link ansible-doc to $PREFIX/bin"
+ln -sf $DEST_DIR/bin/ansible-playbook $PREFIX/bin || error_exit "Cannot link ansible-playbook to $PREFIX/bin"
+ln -sf $DEST_DIR/bin/ansible-pull $PREFIX/bin || error_exit "Cannot link ansible-pull to $PREFIX/bin"
+
+exit 0

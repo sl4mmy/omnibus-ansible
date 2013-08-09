@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Perform necessary ansible setup steps
+# after package is installed.
+#
+
+PROGNAME=$(basename $0)
+DEST_DIR=/opt/ansible
+PREFIX=/usr/local
+
+function error_exit
+{
+  echo "${PROGNAME}: ${1:-"Unknown Error"}" 1>&2
+  exit 1
+}
+
+ln -sf $DEST_DIR/bin/ansible $PREFIX/bin || error_exit "Cannot link ansible to $PREFIX/bin"
+ln -sf $DEST_DIR/bin/ansible-doc $PREFIX/bin || error_exit "Cannot link ansible-doc to $PREFIX/bin"
+ln -sf $DEST_DIR/bin/ansible-playbook $PREFIX/bin || error_exit "Cannot link ansible-playbook to $PREFIX/bin"
+ln -sf $DEST_DIR/bin/ansible-pull $PREFIX/bin || error_exit "Cannot link ansible-pull to $PREFIX/bin"
+
+echo "Thank you for installing ansible!"
+
+exit 0
