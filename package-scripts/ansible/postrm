@@ -12,6 +12,8 @@ rm -f $PREFIX/bin/ansible-doc
 rm -f $PREFIX/bin/ansible-playbook
 rm -f $PREFIX/bin/ansible-pull
 
+rm -f /usr/share/ansible
+
 echo "ansible has been uninstalled!"
 
 exit 0

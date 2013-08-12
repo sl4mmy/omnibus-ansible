@@ -5,7 +5,7 @@ homepage "ansibleworks.com"
 replaces        "ansible"
 install_path    "/opt/ansible"
 build_version   "1.2.2"
-build_iteration 1
+build_iteration 2
 
 # creates required build directories
 dependency "preparation"

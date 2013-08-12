@@ -27,4 +27,7 @@ ln -sf $DEST_DIR/bin/ansible-doc $PREFIX/bin || error_exit "Cannot link ansible-
 ln -sf $DEST_DIR/bin/ansible-playbook $PREFIX/bin || error_exit "Cannot link ansible-playbook to $PREFIX/bin"
 ln -sf $DEST_DIR/bin/ansible-pull $PREFIX/bin || error_exit "Cannot link ansible-pull to $PREFIX/bin"
 
+ln -sf $DEST_DIR/embedded/ansible/share/ansible /usr/share/ansible || error_exit "Cannot link $DEST_DIR/embedded/ansible/share/ansible to /usr/share/ansible"
+mkdir /etc/ansible || error_exit "Cannot create directory /etc/ansible"
+
 exit 0
