@@ -1,5 +1,5 @@
 name "ansible"
-version "release1.5.4"
+version "release1.6.6"
 
 dependency "bzip2"
 dependency "gdbm"
