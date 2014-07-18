@@ -1,7 +1,6 @@
 GIT
-  remote: https://github.com/sl4mmy/omnibus-software
-  revision: 2707cec613fa854a2250956b5b5077a12bce6020
-  branch: always-patch-libiconv
+  remote: https://github.com/opscode/omnibus-software
+  revision: 4f92644e5aa0e728b34b82b21170d553826d5f41
   specs:
     omnibus-software (0.0.1)
 
