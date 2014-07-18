@@ -1,5 +1,5 @@
 name "sqlite3"
-version "3.7.17"
+default_version "3.7.17"
 
 source :url => "http://www.sqlite.org/2013/sqlite-autoconf-3071700.tar.gz",
        :md5 => "18c285053e9562b848209cb0ee16d4ab"

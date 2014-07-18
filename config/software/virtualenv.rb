@@ -1,5 +1,5 @@
 name "virtualenv"
-version "1.10.1"
+default_version "1.11.6"
 
 dependency "pip"
 

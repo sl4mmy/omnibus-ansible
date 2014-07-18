@@ -2,7 +2,6 @@ name "ansible"
 maintainer "Kent R. Spillner"
 homepage "ansibleworks.com"
 
-replaces        "ansible"
 install_path    "/opt/ansible"
 build_version   "1.6.6"
 

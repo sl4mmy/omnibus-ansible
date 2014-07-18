@@ -1,5 +1,5 @@
 name "gmp"
-version "5.1.2"
+default_version "5.1.2"
 
 source :url => "ftp://ftp.gnu.org/gnu/#{name}/#{name}-#{version}.tar.bz2",
        :md5 => "7e3516128487956cd825fef01aafe4bc"

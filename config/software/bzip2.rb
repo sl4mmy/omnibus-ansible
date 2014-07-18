@@ -1,5 +1,5 @@
 name "bzip2"
-version "1.0.6"
+default_version "1.0.6"
 
 source :url => "http://www.bzip.org/#{version}/#{name}-#{version}.tar.gz",
        :md5 => "00b516f4704d4a7cb50a1d97e6e8e15b"
