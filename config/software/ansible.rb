@@ -1,5 +1,5 @@
 name "ansible"
-default_version "release1.6.6"
+default_version "release1.7.2"
 
 dependency "bzip2"
 dependency "gdbm"

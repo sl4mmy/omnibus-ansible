@@ -2,8 +2,8 @@ name "ansible"
 maintainer "Kent R. Spillner"
 homepage "ansibleworks.com"
 
-install_path    "/opt/ansible"
-build_version   "1.6.6"
+install_dir    "/opt/ansible"
+build_version   "1.7.2"
 
 # creates required build directories
 dependency "preparation"
