@@ -14,6 +14,6 @@ env = {
 
 build do
   command "./configure --prefix=#{install_dir}/embedded"
-  command "make -j #{max_build_jobs}", :env => env
+  command "make -j #{workers}", :env => env
   command "make install"
 end

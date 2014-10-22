@@ -17,6 +17,6 @@ build do
            "--prefix=#{install_dir}/embedded",
            "--enable-readline=no"].join(" "), :env => env
 
-  command "make -j #{max_build_jobs}", :env => env
+  command "make -j #{workers}", :env => env
   command "make install"
 end
