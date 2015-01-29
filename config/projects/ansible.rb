@@ -3,7 +3,7 @@ maintainer "Kent R. Spillner"
 homepage "ansibleworks.com"
 
 install_dir    "/opt/ansible"
-build_version   "1.7.2"
+build_version   "1.8.2"
 
 # creates required build directories
 dependency "preparation"
