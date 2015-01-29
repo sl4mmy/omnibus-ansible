@@ -1,14 +1,14 @@
 GIT
   remote: git://github.com/opscode/omnibus-software.git
-  revision: 4c57cb984649671f2410766b78956826fa733c94
+  revision: c4a1b49bad0aad0ac496fdc5f3b9c50bc76acd6e
   specs:
     omnibus-software (4.0.0)
 
 GIT
   remote: git://github.com/opscode/omnibus.git
-  revision: a026dba566da533af0d4b9e48239901cac96a996
+  revision: 9001e5b90109a52fe10cc4b9b97428d0077c7677
   specs:
-    omnibus (4.0.0.rc.1)
+    omnibus (4.0.0.rc.2)
       chef-sugar (~> 2.2)
       cleanroom (~> 1.0)
       mixlib-shellout (~> 1.4)
