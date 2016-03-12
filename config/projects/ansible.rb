@@ -14,5 +14,7 @@ dependency "ansible"
 # version manifest file
 dependency "version-manifest"
 
+override :python, version: "2.7.11"
+
 exclude "\.git*"
 exclude "bundler\/git"
