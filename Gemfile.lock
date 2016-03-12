@@ -1,14 +1,15 @@
 GIT
   remote: git://github.com/opscode/omnibus-software.git
-  revision: e91e67ec0ccc401645ee64604f57bb1a5f6784ca
+  revision: 4fbf995d227bfe0d26408eeaf93a2a011d6724d3
   specs:
     omnibus-software (4.0.0)
+      omnibus (>= 5.1.0)
 
 GIT
   remote: git://github.com/opscode/omnibus.git
-  revision: 94b293b711e3372e04c22f92974d2248a9e60330
+  revision: 49f6f2197fc86896aacf6fdc542e964e5547d400
   specs:
-    omnibus (5.0.1)
+    omnibus (5.1.0)
       aws-sdk (~> 2)
       chef-sugar (~> 3.3)
       cleanroom (~> 1.0)
@@ -21,13 +22,13 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    aws-sdk (2.2.24)
-      aws-sdk-resources (= 2.2.24)
-    aws-sdk-core (2.2.24)
+    aws-sdk (2.2.26)
+      aws-sdk-resources (= 2.2.26)
+    aws-sdk-core (2.2.26)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.24)
-      aws-sdk-core (= 2.2.24)
-    chef-config (12.7.2)
+    aws-sdk-resources (2.2.26)
+      aws-sdk-core (= 2.2.26)
+    chef-config (12.8.1)
       mixlib-config (~> 2.0)
       mixlib-shellout (~> 2.0)
     chef-sugar (3.3.0)
@@ -43,7 +44,7 @@ GEM
     mixlib-log (1.6.0)
     mixlib-shellout (2.2.6)
     mixlib-versioning (1.1.0)
-    ohai (8.10.0)
+    ohai (8.12.0)
       chef-config (>= 12.5.0.alpha.1, < 13)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
@@ -52,9 +53,11 @@ GEM
       mixlib-config (~> 2.0)
       mixlib-log
       mixlib-shellout (~> 2.0)
+      plist
       rake (~> 10.1)
       systemu (~> 2.6.4)
       wmi-lite (~> 1.0)
+    plist (3.2.0)
     rake (10.5.0)
     ruby-progressbar (1.7.5)
     systemu (2.6.5)
@@ -67,6 +70,3 @@ PLATFORMS
 DEPENDENCIES
   omnibus!
   omnibus-software!
-
-BUNDLED WITH
-   1.11.2
